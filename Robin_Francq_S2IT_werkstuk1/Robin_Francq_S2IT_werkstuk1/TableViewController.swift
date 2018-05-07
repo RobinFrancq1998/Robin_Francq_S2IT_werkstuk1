@@ -50,6 +50,7 @@ class TableViewController: UITableViewController {
 
         // Configure the cell...
         cell.textLabel?.text = personen[indexPath.row].voornaam + " " + personen[indexPath.row].naam
+        cell.imageView?.image = UIImage(named: personen[indexPath.row].fotoNaam)
         return cell
     }
     
@@ -98,7 +99,7 @@ class TableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         if let nextvc = segue.destination as? ViewController {
             let indexpath = self.tableView.indexPathForSelectedRow!
-            nextvc.tmp = self.personen[indexpath.row].naam
+            nextvc.tmpPersoon = self.personen[indexpath.row]
         }
     }
     

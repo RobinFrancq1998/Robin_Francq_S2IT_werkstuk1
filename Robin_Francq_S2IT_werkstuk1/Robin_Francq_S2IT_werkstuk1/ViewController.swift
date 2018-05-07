@@ -9,14 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var tmp:String?
+    var tmpPersoon:Persoon?
 
     @IBOutlet weak var TestLabel: UILabel!
+    @IBOutlet weak var Foto: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.TestLabel.text = tmp
+        self.TestLabel.text = tmpPersoon?.naam
+        self.Foto.image = UIImage(named: (tmpPersoon?.fotoNaam)!)
     }
 
     override func didReceiveMemoryWarning() {
