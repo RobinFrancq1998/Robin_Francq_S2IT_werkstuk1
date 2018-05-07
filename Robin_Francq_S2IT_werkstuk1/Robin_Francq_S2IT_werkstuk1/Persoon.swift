@@ -12,15 +12,15 @@ class Persoon {
     
     var naam: String
     var voornaam: String
-    var foto: String
+    var fotoNaam: String
     var adres: Adres
     var gpsCoordinaat: String
     var telefoonNummer: String
     
-    init(naam: String, voornaam: String, foto: String, adres: Adres, gpsCoordinaat: String, telefoonNummer: String){
+    init(naam: String, voornaam: String, fotoNaam: String, adres: Adres, gpsCoordinaat: String, telefoonNummer: String){
         self.naam = naam
         self.voornaam = voornaam
-        self.foto = foto
+        self.fotoNaam = fotoNaam
         self.adres = adres
         self.gpsCoordinaat = gpsCoordinaat
         self .telefoonNummer = telefoonNummer
