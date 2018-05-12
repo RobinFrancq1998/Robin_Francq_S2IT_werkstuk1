@@ -11,15 +11,21 @@ import UIKit
 class ViewController: UIViewController {
     var tmpPersoon:Persoon?
 
-    @IBOutlet weak var TestLabel: UILabel!
+    @IBOutlet weak var voornaamNaam: UILabel!
     @IBOutlet weak var Foto: UIImageView!
+    @IBOutlet weak var straatnaamHuisnummer: UILabel!
+    @IBOutlet weak var postcodeGemeente: UILabel!
+    @IBOutlet weak var telefoonnummer: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.TestLabel.text = tmpPersoon?.naam
+        self.voornaamNaam.text = (tmpPersoon?.voornaam)! + " " + (tmpPersoon?.naam)!
         self.Foto.image = UIImage(named: (tmpPersoon?.fotoNaam)!)
+        self.straatnaamHuisnummer.text = (tmpPersoon?.adres.straat)! + " " + String((tmpPersoon?.adres.huisnummer)!)
+        self.postcodeGemeente.text = (tmpPersoon?.adres.postcode)! + " " + (tmpPersoon?.adres.gemeente)!
+        self.telefoonnummer.text = (tmpPersoon?.telefoonNummer)!
     }
 
     override func didReceiveMemoryWarning() {

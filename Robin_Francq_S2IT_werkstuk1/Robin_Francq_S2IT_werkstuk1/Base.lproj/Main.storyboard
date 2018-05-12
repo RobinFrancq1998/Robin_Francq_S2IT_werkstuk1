@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -75,24 +76,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfm-Wp-KIy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voornaam naam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfm-Wp-KIy">
                                 <rect key="frame" x="0.0" y="91" width="375" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sxp-u0-1RH">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sxp-u0-1RH">
                                 <rect key="frame" x="112" y="137" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="rqU-YL-lrN"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adres: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWe-wF-Gxt">
+                                <rect key="frame" x="16" y="301" width="54" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Straatnaam huisnummer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPL-RB-2Tn">
+                                <rect key="frame" x="16" y="330" width="188" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="O5S-7d-UkV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Postcode gemeente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de9-ZD-kaI">
+                                <rect key="frame" x="16" y="361" width="154" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefoonnummer: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0e-VP-BCP">
+                                <rect key="frame" x="16" y="407" width="217" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nummer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kZ-TQ-pev">
+                                <rect key="frame" x="16" y="436" width="188" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="VjX-jb-wD9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uPL-RB-2Tn" firstAttribute="top" secondItem="KWe-wF-Gxt" secondAttribute="bottom" constant="8" symbolic="YES" id="06t-h6-Re1"/>
+                            <constraint firstItem="7kZ-TQ-pev" firstAttribute="trailing" secondItem="uPL-RB-2Tn" secondAttribute="trailing" id="3G3-Lb-oLZ"/>
+                            <constraint firstItem="uPL-RB-2Tn" firstAttribute="top" secondItem="Sxp-u0-1RH" secondAttribute="bottom" constant="43" id="3Xa-hc-xpe"/>
+                            <constraint firstItem="Sxp-u0-1RH" firstAttribute="leading" secondItem="HEk-KM-7rp" secondAttribute="leading" constant="112" id="F1b-5W-ZoX"/>
+                            <constraint firstItem="Sxp-u0-1RH" firstAttribute="top" secondItem="Sfm-Wp-KIy" secondAttribute="bottom" constant="25" id="Kao-du-FSS"/>
+                            <constraint firstItem="Sfm-Wp-KIy" firstAttribute="top" secondItem="HEk-KM-7rp" secondAttribute="top" constant="27" id="Rhj-wc-TLI"/>
+                            <constraint firstItem="A0e-VP-BCP" firstAttribute="leading" secondItem="de9-ZD-kaI" secondAttribute="leading" id="U3h-b9-t20"/>
+                            <constraint firstItem="Sfm-Wp-KIy" firstAttribute="centerX" secondItem="Sxp-u0-1RH" secondAttribute="centerX" id="V0q-Ng-XcH"/>
+                            <constraint firstItem="Sfm-Wp-KIy" firstAttribute="leading" secondItem="Ob5-Lc-rVM" secondAttribute="leading" id="Wlu-ea-VV4"/>
+                            <constraint firstItem="de9-ZD-kaI" firstAttribute="top" secondItem="KWe-wF-Gxt" secondAttribute="bottom" constant="39" id="bIR-pY-pdV"/>
+                            <constraint firstItem="HEk-KM-7rp" firstAttribute="trailing" secondItem="A0e-VP-BCP" secondAttribute="trailing" constant="142" id="biv-aG-w1e"/>
+                            <constraint firstItem="de9-ZD-kaI" firstAttribute="leading" secondItem="uPL-RB-2Tn" secondAttribute="leading" id="cjL-9g-NOn"/>
+                            <constraint firstItem="A0e-VP-BCP" firstAttribute="leading" secondItem="7kZ-TQ-pev" secondAttribute="leading" id="eiv-a3-clT"/>
+                            <constraint firstItem="A0e-VP-BCP" firstAttribute="top" secondItem="de9-ZD-kaI" secondAttribute="bottom" constant="25" id="rTh-S7-qa2"/>
+                            <constraint firstItem="KWe-wF-Gxt" firstAttribute="leading" secondItem="Ob5-Lc-rVM" secondAttribute="leadingMargin" id="rc7-Zz-Qg4"/>
+                            <constraint firstItem="KWe-wF-Gxt" firstAttribute="leading" secondItem="uPL-RB-2Tn" secondAttribute="leading" id="uuf-kI-phN"/>
+                            <constraint firstAttribute="trailing" secondItem="Sfm-Wp-KIy" secondAttribute="trailing" id="yQk-ak-bOA"/>
+                            <constraint firstItem="7kZ-TQ-pev" firstAttribute="top" secondItem="A0e-VP-BCP" secondAttribute="bottom" constant="8" symbolic="YES" id="zjL-sn-LYF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="HEk-KM-7rp"/>
                     </view>
                     <connections>
                         <outlet property="Foto" destination="Sxp-u0-1RH" id="4wC-Vv-0bf"/>
-                        <outlet property="TestLabel" destination="Sfm-Wp-KIy" id="X96-oO-mcr"/>
+                        <outlet property="postcodeGemeente" destination="de9-ZD-kaI" id="Nze-2C-tpl"/>
+                        <outlet property="straatnaamHuisnummer" destination="uPL-RB-2Tn" id="Wjc-vU-BDN"/>
+                        <outlet property="telefoonnummer" destination="7kZ-TQ-pev" id="47m-Ih-or3"/>
+                        <outlet property="voornaamNaam" destination="Sfm-Wp-KIy" id="dBn-Tj-eB9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q66-mO-WbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
