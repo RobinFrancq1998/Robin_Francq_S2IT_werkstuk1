@@ -6,13 +6,19 @@
 //  Copyright © 2018 Robin Francq. All rights reserved.
 //
 
+// Referentie voor het gebruiken van "coordinate" in de klasse Peroon
+// Link: https://www.raywenderlich.com/160517/mapkit-tutorial-getting-started
+// => Zie Persoon.swift voor Copyright licentie
+
 import UIKit
+import MapKit
 
 class TableViewController: UITableViewController {
 
     var personen = [
-        Persoon(naam: "Vermassen", voornaam: "Jef", fotoNaam: "persoon1", adres: Adres(straat: "Zuitstraat", huisnummer: 72, postcode: "1000", gemeente: "Brussel"), gpsCoordinaat: "50.845932, 4.349570", telefoonNummer: "0497123456"),
-        Persoon(naam: "Verminnen", voornaam: "Jos", fotoNaam: "persoon2", adres: Adres(straat: "Mont des Arts", huisnummer: 23, postcode: "1000", gemeente: "Brussel"), gpsCoordinaat: "50.844029, 4.358341", telefoonNummer: "0497999999")
+        Persoon(naam: "Vermassen", voornaam: "Jef", fotoNaam: "persoon1", adres: Adres(straat: "Zuitstraat", huisnummer: 72, postcode: "1000", gemeente: "Brussel"), coordinate: CLLocationCoordinate2D(latitude: 50.845932, longitude: 4.349570), telefoonNummer: "0497123456"),
+        Persoon(naam: "Verminnen", voornaam: "Jos", fotoNaam: "persoon2", adres: Adres(straat: "Mont des Arts", huisnummer: 23, postcode: "1000", gemeente: "Brussel"), coordinate: CLLocationCoordinate2D(latitude: 50.844029, longitude: 4.358341), telefoonNummer: "0497999999"),
+        Persoon(naam: "Vandebotermet", voornaam: "Marieke", fotoNaam: "persoon3", adres: Adres(straat: "Herdebeekstraat", huisnummer: 125, postcode: "1700", gemeente: "Dilbeek"), coordinate: CLLocationCoordinate2D(latitude: 50.833654, longitude: 4.231732), telefoonNummer: "0497505050")
     ]
     
     var books = ["Eating Animals","Animal Farm", "Unweaving the Rainbow", "A Universe from Nothing"]
