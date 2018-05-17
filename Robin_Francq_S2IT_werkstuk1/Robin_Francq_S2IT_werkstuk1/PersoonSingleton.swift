@@ -16,9 +16,9 @@ final class PersoonSingleton {
     
     private init(){
         self.personen = [
-            Persoon(naam: "Vermassen", voornaam: "Jef", fotoNaam: "persoon1", adres: Adres(straat: "Zuitstraat", huisnummer: 72, postcode: "1000", gemeente: "Brussel"), coordinate: CLLocationCoordinate2D(latitude: 50.845932, longitude: 4.349570), telefoonNummer: "0497123456"),
-            Persoon(naam: "Verminnen", voornaam: "Jos", fotoNaam: "persoon2", adres: Adres(straat: "Mont des Arts", huisnummer: 23, postcode: "1000", gemeente: "Brussel"), coordinate: CLLocationCoordinate2D(latitude: 50.844029, longitude: 4.358341), telefoonNummer: "0497999999"),
-            Persoon(naam: "Vandebotermet", voornaam: "Marieke", fotoNaam: "persoon3", adres: Adres(straat: "Herdebeekstraat", huisnummer: 125, postcode: "1700", gemeente: "Dilbeek"), coordinate: CLLocationCoordinate2D(latitude: 50.833654, longitude: 4.231732), telefoonNummer: "0497505050")
+            Persoon(naam: "Joseph", voornaam: "Urbanus", fotoNaam: "Urbanus", adres: Adres(straat: "Rue des Godins", huisnummer: 31, postcode: "10270", gemeente: "Fresnoy-le-Château"), coordinate: CLLocationCoordinate2D(latitude: 48.209610, longitude: 4.221169), telefoonNummer: "0497123456"),
+            Persoon(naam: "Deseure", voornaam: "Eufrazie", fotoNaam: "Eufrasie", adres: Adres(straat: "Calle de Almadén", huisnummer: 25, postcode: "28014", gemeente: "Madrid"), coordinate: CLLocationCoordinate2D(latitude: 40.410940, longitude: -3.693718), telefoonNummer: "0497999999"),
+            Persoon(naam: "Cesar", voornaam: "Tripel", fotoNaam: "Cesar", adres: Adres(straat: "شارع إمحمد المقريف", huisnummer: 100, postcode: "10320", gemeente: "Sabha"), coordinate: CLLocationCoordinate2D(latitude: 27.042982, longitude: 14.425556), telefoonNummer: "0497505050")
         ]
     }
     

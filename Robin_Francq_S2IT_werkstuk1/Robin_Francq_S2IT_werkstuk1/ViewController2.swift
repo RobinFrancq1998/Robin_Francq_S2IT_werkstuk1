@@ -15,6 +15,8 @@ class ViewController2: UIViewController, MKMapViewDelegate {
     
     var manager = CLLocationManager()
     
+    var personen = PersoonSingleton.instance.getPersonen()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,14 +26,18 @@ class ViewController2: UIViewController, MKMapViewDelegate {
         
         manager.startUpdatingLocation()
         
-        let location = CLLocationCoordinate2D(latitude: 50.852183, longitude: 4.343737)
-        let myAnnotation = MyAnnotation(coordinate: location, title: "Barbeton")
+        self.fillMapWithPersons();
         
-        let location2 = CLLocationCoordinate2D(latitude: 60, longitude: 5)
-        let myAnnotation2 = MyAnnotation(coordinate: location2, title: "Barbeton2")
-        
-        self.map.addAnnotation(myAnnotation)
-        self.map.addAnnotation(myAnnotation2)
+        /*
+            let location = CLLocationCoordinate2D(latitude: 50.852183, longitude: 4.343737)
+            let myAnnotation = MyAnnotation(coordinate: location, title: "Barbeton")
+         
+            let location2 = CLLocationCoordinate2D(latitude: 60, longitude: 5)
+            let myAnnotation2 = MyAnnotation(coordinate: location2, title: "Barbeton2")
+         
+            self.map.addAnnotation(myAnnotation)
+            self.map.addAnnotation(myAnnotation2)
+         */
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,5 +50,13 @@ class ViewController2: UIViewController, MKMapViewDelegate {
         let span = MKCoordinateSpan(latitudeDelta: 60, longitudeDelta: 60)
         let region = MKCoordinateRegion(center: center, span: span)
         mapView.setRegion(region, animated: true)
+    }
+    
+    private func fillMapWithPersons(){
+        for person in self.personen {
+            let location = CLLocationCoordinate2D(latitude: person.coordinate.latitude, longitude: person.coordinate.longitude)
+            let annotation = MyAnnotation(coordinate: location, title: person.voornaam + " " + person.naam)
+            self.map.addAnnotation(annotation)
+        }
     }
 }
