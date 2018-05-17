@@ -27,7 +27,11 @@ class ViewController2: UIViewController, MKMapViewDelegate {
         let location = CLLocationCoordinate2D(latitude: 50.852183, longitude: 4.343737)
         let myAnnotation = MyAnnotation(coordinate: location, title: "Barbeton")
         
+        let location2 = CLLocationCoordinate2D(latitude: 60, longitude: 5)
+        let myAnnotation2 = MyAnnotation(coordinate: location2, title: "Barbeton2")
+        
         self.map.addAnnotation(myAnnotation)
+        self.map.addAnnotation(myAnnotation2)
     }
 
     override func didReceiveMemoryWarning() {
