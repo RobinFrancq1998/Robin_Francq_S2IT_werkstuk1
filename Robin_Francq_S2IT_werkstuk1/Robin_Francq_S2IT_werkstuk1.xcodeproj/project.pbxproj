@@ -17,6 +17,7 @@
 		0009DBCD209F63CB007E64D6 /* Adres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0009DBCC209F63CB007E64D6 /* Adres.swift */; };
 		0042E2C120A7240500B9B237 /* MyAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042E2C020A7240500B9B237 /* MyAnnotation.swift */; };
 		0042E2FF20A7429F00B9B237 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042E2FE20A7429F00B9B237 /* ViewController2.swift */; };
+		00700BB520AD8004004731A0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00700BB420AD8004004731A0 /* MapKit.framework */; };
 		00AE6E8D20A0ACE8000F228B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AE6E8C20A0ACE8000F228B /* TableViewController.swift */; };
 		00AE6E8F20A0ADC6000F228B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AE6E8E20A0ADC6000F228B /* ViewController.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,8 @@
 		0009DBCC209F63CB007E64D6 /* Adres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adres.swift; sourceTree = "<group>"; };
 		0042E2C020A7240500B9B237 /* MyAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnnotation.swift; sourceTree = "<group>"; };
 		0042E2FE20A7429F00B9B237 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		00700BB220AD7C38004731A0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		00700BB420AD8004004731A0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		00AE6E8C20A0ACE8000F228B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		00AE6E8E20A0ADC6000F228B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00700BB520AD8004004731A0 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +95,7 @@
 				0009DBB0209F548D007E64D6 /* Robin_Francq_S2IT_werkstuk1Tests */,
 				0009DBBB209F548D007E64D6 /* Robin_Francq_S2IT_werkstuk1UITests */,
 				0009DB9A209F548C007E64D6 /* Products */,
+				00700BB120AD7C38004731A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +143,15 @@
 				0009DBBE209F548D007E64D6 /* Info.plist */,
 			);
 			path = Robin_Francq_S2IT_werkstuk1UITests;
+			sourceTree = "<group>";
+		};
+		00700BB120AD7C38004731A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00700BB420AD8004004731A0 /* MapKit.framework */,
+				00700BB220AD7C38004731A0 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
