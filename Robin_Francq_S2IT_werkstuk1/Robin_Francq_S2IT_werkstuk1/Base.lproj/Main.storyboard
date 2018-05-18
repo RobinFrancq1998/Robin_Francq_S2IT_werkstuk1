@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--List of Poeple-->
+        <!--List of People-->
         <scene sceneID="Laq-QV-Dq6">
             <objects>
                 <tableViewController id="m3g-dv-L1x" customClass="TableViewController" customModule="Robin_Francq_S2IT_werkstuk1" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,7 +50,7 @@
                             <outlet property="delegate" destination="m3g-dv-L1x" id="dFf-FZ-x22"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="List of Poeple" id="8HG-JV-tpc"/>
+                    <navigationItem key="navigationItem" title="List of People" id="8HG-JV-tpc"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nFf-rD-vzY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
