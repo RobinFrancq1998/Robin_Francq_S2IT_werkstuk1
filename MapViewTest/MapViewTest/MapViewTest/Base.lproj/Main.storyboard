@@ -18,21 +18,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yc9-do-7B7">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iIW-QI-74U">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="VZB-1j-dhO"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iIW-QI-74U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0cL-3H-oyZ"/>
+                            <constraint firstAttribute="trailing" secondItem="iIW-QI-74U" secondAttribute="trailing" id="1K0-Z4-sdy"/>
+                            <constraint firstItem="iIW-QI-74U" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9wR-p6-XmI"/>
+                            <constraint firstItem="iIW-QI-74U" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="TpR-oV-8ky"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="map" destination="yc9-do-7B7" id="Tlj-ZA-OZk"/>
+                        <outlet property="myMapView" destination="iIW-QI-74U" id="Xga-Fu-mp0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-79.200000000000003" y="132.68365817091455"/>
+            <point key="canvasLocation" x="-79.200000000000003" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

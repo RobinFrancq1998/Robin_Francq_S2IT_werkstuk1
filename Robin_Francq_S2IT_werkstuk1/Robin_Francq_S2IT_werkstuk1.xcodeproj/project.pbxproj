@@ -16,11 +16,11 @@
 		0009DBCB209F6275007E64D6 /* Persoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0009DBCA209F6275007E64D6 /* Persoon.swift */; };
 		0009DBCD209F63CB007E64D6 /* Adres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0009DBCC209F63CB007E64D6 /* Adres.swift */; };
 		0042E2C120A7240500B9B237 /* MyAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042E2C020A7240500B9B237 /* MyAnnotation.swift */; };
-		0042E2FF20A7429F00B9B237 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0042E2FE20A7429F00B9B237 /* ViewController2.swift */; };
 		00700BB520AD8004004731A0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00700BB420AD8004004731A0 /* MapKit.framework */; };
 		00700BB720AD8CFC004731A0 /* PersoonSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00700BB620AD8CFC004731A0 /* PersoonSingleton.swift */; };
 		00AE6E8D20A0ACE8000F228B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AE6E8C20A0ACE8000F228B /* TableViewController.swift */; };
 		00AE6E8F20A0ADC6000F228B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AE6E8E20A0ADC6000F228B /* ViewController.swift */; };
+		00D85C8420AF36DF00B0D95F /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D85C8320AF36DF00B0D95F /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,12 +56,12 @@
 		0009DBCA209F6275007E64D6 /* Persoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persoon.swift; sourceTree = "<group>"; };
 		0009DBCC209F63CB007E64D6 /* Adres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adres.swift; sourceTree = "<group>"; };
 		0042E2C020A7240500B9B237 /* MyAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnnotation.swift; sourceTree = "<group>"; };
-		0042E2FE20A7429F00B9B237 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		00700BB220AD7C38004731A0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		00700BB420AD8004004731A0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		00700BB620AD8CFC004731A0 /* PersoonSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersoonSingleton.swift; sourceTree = "<group>"; };
 		00AE6E8C20A0ACE8000F228B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		00AE6E8E20A0ADC6000F228B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00D85C8320AF36DF00B0D95F /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController2.swift; path = ../ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +114,10 @@
 		0009DB9B209F548C007E64D6 /* Robin_Francq_S2IT_werkstuk1 */ = {
 			isa = PBXGroup;
 			children = (
+				00D85C8320AF36DF00B0D95F /* ViewController2.swift */,
 				0042E2C020A7240500B9B237 /* MyAnnotation.swift */,
 				0009DB9C209F548C007E64D6 /* AppDelegate.swift */,
 				0009DBA0209F548D007E64D6 /* Main.storyboard */,
-				0042E2FE20A7429F00B9B237 /* ViewController2.swift */,
 				00AE6E8E20A0ADC6000F228B /* ViewController.swift */,
 				00AE6E8C20A0ACE8000F228B /* TableViewController.swift */,
 				0009DBCA209F6275007E64D6 /* Persoon.swift */,
@@ -288,8 +288,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0042E2FF20A7429F00B9B237 /* ViewController2.swift in Sources */,
 				00AE6E8F20A0ADC6000F228B /* ViewController.swift in Sources */,
+				00D85C8420AF36DF00B0D95F /* ViewController2.swift in Sources */,
 				00700BB720AD8CFC004731A0 /* PersoonSingleton.swift in Sources */,
 				0009DBCD209F63CB007E64D6 /* Adres.swift in Sources */,
 				0042E2C120A7240500B9B237 /* MyAnnotation.swift in Sources */,
